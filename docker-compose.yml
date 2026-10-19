@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    image: zhebegenov-ersultan-devops
+    container_name: zhebegenov-ersultan-container
+    ports:
+      - "8000:8000"
+    environment:
+      STUDENT_NAME: ${STUDENT_NAME:-Ersultan}
+      STUDENT_SURNAME: ${STUDENT_SURNAME:-Zhebegenov}
+      STUDENT_GROUP: ${STUDENT_GROUP:-IT2-2309}
+      STUDENT_ID: ${STUDENT_ID:-37138}
+    restart: unless-stopped
