@@ -1,0 +1,2 @@
+# Always use Linux line endings (important when working from Windows)
+* text=auto eol=lf
